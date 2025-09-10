@@ -20,7 +20,8 @@ A modern React-based chatbot for Iron Lady leadership programs with both rule-ba
 
 1. **Clone or download the project**
    ```bash
-   cd chatbot
+   cd chatbot_iron_lady
+
    ```
 
 2. **Install dependencies**
