@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node ./server/index.js",
-    "dev:all": "concurrently \"npm:server\" \"npm:dev\""
+    "dev:all": "concurrently \"npm:server\" \"npm:dev\" "
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
