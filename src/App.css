@@ -1,0 +1,72 @@
+#root {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  gap: 1rem;
+  min-height: 100dvh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  height: 60dvh;
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+}
+.message.user {
+  justify-content: flex-end;
+}
+.message.assistant {
+  justify-content: flex-start;
+}
+.bubble {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+.message.user .bubble {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+.composer {
+  display: flex;
+  gap: 0.5rem;
+}
+.composer input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #111;
+  color: inherit;
+}
+.composer button {
+  padding: 0.75rem 1rem;
+}
+
+.footer {
+  opacity: 0.7;
+  text-align: center;
+}
